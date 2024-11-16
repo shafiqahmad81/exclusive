@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exclusive | Home</title>
+  </head>
+  <body>
+    <main>
+      <!-- Header top -->
+      <div class="bg-primary-color">
+        <div class="container">
+          <div class="relative flex flex-col items-center py-4">
+            <p class="text-white text-sm text-center">
+              Summer Sale For All Swim Suits And Free Express Delivery - OFF
+              50%!
+              <button class="leading-6 font-semibold underline ml-2">
+                ShopNow
+              </button>
+            </p>
+            <div
+              class="lg:absolute inset-y-0 right-0 flex items-center mt-2 lg:mt-0"
+            >
+              <label for="currency" class="sr-only">Currency</label>
+              <select
+                id="currency"
+                name="currency"
+                class="rounded-md border-0 py-0 pl-2 pr-1 bg-black text-white sm:text-sm cursor-pointer"
+              >
+                <option>English</option>
+                <option>English2</option>
+                <option>English3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Header section -->
+
+      <header class="mt-10">
+        <div class="container">
+          <nav class="flex items-center justify-between" aria-label="Global">
+            <div class="flex">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="font-inter font-semibold">Exclusive</span>
+              </a>
+            </div>
+            <ul class="hidden lg:flex lg:gap-x-8">
+              <li class="px-4 py-2"><a href="#" class="nav-item">Home</a></li>
+              <li class="px-4 py-2">
+                <a href="#" class="nav-item">Contact</a>
+              </li>
+              <li class="px-4 py-2">
+                <a href="#" class="nav-item">About</a>
+              </li>
+              <li class="px-4 py-2">
+                <a href="#" class="nav-item">Sign Up</a>
+              </li>
+            </ul>
+
+            <div class="flex lg:hidden relative z-50">
+              <button
+                id="open-menu"
+                type="button"
+                class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              >
+                <span class="sr-only">Open main menu</span>
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </button>
+
+              <button
+                id="close-menu"
+                type="button"
+                class="-m-2.5 rounded-md p-2.5 text-gray-700 hidden"
+              >
+                <span class="sr-only">Close menu</span>
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18 18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="hidden lg:flex lg:justify-end items-center">
+              <div class="flex items-center relative rounded mr-6">
+                <input
+                  class="w-[243px] pl-5 pr-10 py-4 font-normal text-xs bg-secondary-color focus:outline-none"
+                  type="text"
+                  placeholder="What are you looking for?"
+                />
+                <button class="absolute top-1/2 right-3 -translate-y-1/2">
+                  <img
+                    class="w-6"
+                    src="./assets/icon/search.png"
+                    alt="search icon"
+                  />
+                </button>
+              </div>
+              <button class="w-[32px] h-[32px] mr-4">
+                <img src="./assets/icon/wishlist.png" alt="wish" />
+              </button>
+              <button class="w-[32px] h-[32px]">
+                <img src="./assets/icon/card.png" alt="card" />
+              </button>
+            </div>
+          </nav>
+          <!-- Mobile menu, show/hide based on menu open state. -->
+          <div class="lg:hidden relative" role="dialog" aria-modal="true">
+            <!-- Background backdrop, show/hide based on slide-over state. -->
+            <!-- <div class="fixed inset-0 z-50"></div> -->
+            <div
+              id="mobile-menu"
+              class="absolute top-0 right-0 z-40 w-full h-auto bg-white sm:max-w-sm hidden"
+            >
+              <div class="space-y-2 lg:flex">
+                <a
+                  href="#"
+                  class="block rounded-lg py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  >Product</a
+                >
+                <a
+                  href="#"
+                  class="block rounded-lg py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  >Features</a
+                >
+                <a
+                  href="#"
+                  class="block rounded-lg py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  >Marketplace</a
+                >
+                <a
+                  href="#"
+                  class="block rounded-lg py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  >Company</a
+                >
+              </div>
+              <div class="flex justify-end items-center">
+                <div class="w-[243px] flex-1 relative rounded mr-5">
+                  <input
+                    class="w-full pl-5 pr-10 py-4 font-normal text-xs bg-secondary-color focus:outline-none"
+                    type="text"
+                    placeholder="What are you looking for?"
+                  />
+                  <button class="absolute top-1/2 right-3 -translate-y-1/2">
+                    <img
+                      class="w-6 h-6"
+                      src="./assets/icon/search.png"
+                      alt="search icon"
+                    />
+                  </button>
+                </div>
+                <button class="w-[32px] h-[32px] mr-4">
+                  <img src="./assets/icon/wishlist.png" alt="wish" />
+                </button>
+                <button class="w-[32px] h-[32px]">
+                  <img src="./assets/icon/card.png" alt="card" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
