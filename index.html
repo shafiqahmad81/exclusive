@@ -39,7 +39,7 @@
 
       <!-- Header section -->
 
-      <header class="mt-10">
+      <header class="mt-10 pb-3 border-b">
         <div class="container">
           <nav class="flex items-center justify-between" aria-label="Global">
             <div class="flex">
@@ -130,62 +130,361 @@
               </button>
             </div>
           </nav>
-          <!-- Mobile menu, show/hide based on menu open state. -->
-          <div class="lg:hidden relative" role="dialog" aria-modal="true">
-            <!-- Background backdrop, show/hide based on slide-over state. -->
-            <!-- <div class="fixed inset-0 z-50"></div> -->
-            <div
-              id="mobile-menu"
-              class="absolute top-0 right-0 z-40 w-full h-auto bg-white sm:max-w-sm hidden"
-            >
-              <div class="space-y-2 lg:flex">
-                <a
-                  href="#"
-                  class="block rounded-lg py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                  >Product</a
-                >
-                <a
-                  href="#"
-                  class="block rounded-lg py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                  >Features</a
-                >
-                <a
-                  href="#"
-                  class="block rounded-lg py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                  >Marketplace</a
-                >
-                <a
-                  href="#"
-                  class="block rounded-lg py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                  >Company</a
-                >
-              </div>
-              <div class="flex justify-end items-center">
-                <div class="w-[243px] flex-1 relative rounded mr-5">
-                  <input
-                    class="w-full pl-5 pr-10 py-4 font-normal text-xs bg-secondary-color focus:outline-none"
-                    type="text"
-                    placeholder="What are you looking for?"
+        </div>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="lg:hidden relative" role="dialog" aria-modal="true">
+          <div
+            id="mobile-menu"
+            class="absolute top-0 right-0 z-40 w-full h-auto bg-white sm:max-w-sm p-6 hidden"
+          >
+            <div class="space-y-2 lg:flex">
+              <a
+                href="#"
+                class="block rounded-lg py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >Product</a
+              >
+              <a
+                href="#"
+                class="block rounded-lg py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >Features</a
+              >
+              <a
+                href="#"
+                class="block rounded-lg py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >Marketplace</a
+              >
+              <a
+                href="#"
+                class="block rounded-lg py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >Company</a
+              >
+            </div>
+            <div class="flex justify-end items-center">
+              <div class="w-[243px] flex-1 relative rounded mr-5">
+                <input
+                  class="w-full pl-5 pr-10 py-4 font-normal text-xs bg-secondary-color focus:outline-none"
+                  type="text"
+                  placeholder="What are you looking for?"
+                />
+                <button class="absolute top-1/2 right-3 -translate-y-1/2">
+                  <img
+                    class="w-6 h-6"
+                    src="./assets/icon/search.png"
+                    alt="search icon"
                   />
-                  <button class="absolute top-1/2 right-3 -translate-y-1/2">
-                    <img
-                      class="w-6 h-6"
-                      src="./assets/icon/search.png"
-                      alt="search icon"
-                    />
-                  </button>
-                </div>
-                <button class="w-[32px] h-[32px] mr-4">
-                  <img src="./assets/icon/wishlist.png" alt="wish" />
-                </button>
-                <button class="w-[32px] h-[32px]">
-                  <img src="./assets/icon/card.png" alt="card" />
                 </button>
               </div>
+              <button class="w-[32px] h-[32px] mr-4">
+                <img src="./assets/icon/wishlist.png" alt="wish" />
+              </button>
+              <button class="w-[32px] h-[32px]">
+                <img src="./assets/icon/card.png" alt="card" />
+              </button>
             </div>
           </div>
         </div>
       </header>
+
+      <!-- sidebar section -->
+      <section>
+        <div class="container mt-1">
+          <div class="flex">
+            <aside class="w-[233px] pt-11 pr-4 border-r hidden md:block">
+              <ul>
+                <li class="mb-4">
+                  <a class="flex items-center justify-between" href="#">
+                    <span class="h5">Woman’s Fashion</span>
+                    <button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2.5"
+                        stroke="currentColor"
+                        class="size-4"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                        />
+                      </svg>
+                    </button>
+                  </a>
+                </li>
+                <li class="mb-4">
+                  <a class="flex items-center justify-between" href="#">
+                    <span class="h5">Men’s Fashion</span>
+                    <button>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="2.5"
+                        stroke="currentColor"
+                        class="size-4"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                        />
+                      </svg>
+                    </button>
+                  </a>
+                </li>
+                <li class="mb-4">
+                  <a class="flex items-center justify-between" href="#">
+                    <span class="h5">Electronics</span>
+                  </a>
+                </li>
+                <li class="mb-4">
+                  <a class="flex items-center justify-between" href="#">
+                    <span class="h5">Home & Lifestyle</span>
+                  </a>
+                </li>
+                <li class="mb-4">
+                  <a class="flex items-center justify-between" href="#">
+                    <span class="h5">Medicine</span>
+                  </a>
+                </li>
+                <li class="mb-4">
+                  <a class="flex items-center justify-between" href="#">
+                    <span class="h5">Sports & Outdoor</span>
+                  </a>
+                </li>
+                <li class="mb-4">
+                  <a class="flex items-center justify-between" href="#">
+                    <span class="h5">Baby’s & Toys</span>
+                  </a>
+                </li>
+                <li class="mb-4">
+                  <a class="flex items-center justify-between" href="#">
+                    <span class="h5">Groceries & Pets</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex items-center justify-between" href="#">
+                    <span class="h5">Health & Beauty</span>
+                  </a>
+                </li>
+              </ul>
+            </aside>
+            <div class="w-full md:w-[calc(100%-233px)] pt-11 md:pl-10">
+              <div
+                class="bg-black px-4 pb-4 sm-ex:px-0 sm-ex:pb-0 pt-4 flex flex-col sm-ex:flex-row items-center justify-between min-h-[308px] lg:min-h-[344px]"
+              >
+                <div
+                  class="w-full sm-ex:w-[44.196%] sm-ex:pl-[7.174%] sm:pr-[4.484%] order-2 sm-ex:order-1"
+                >
+                  <div class="flex items-center gap-3 lg:gap-6">
+                    <img
+                      class="w-6 lg:w-10"
+                      src="./assets/icon/apple.png"
+                      alt="Apple icon"
+                    />
+                    <h5 class="text-secondary2-color">iPhone 14 Series</h5>
+                  </div>
+                  <h1 class="my-5">Up to 10% off Voucher</h1>
+                  <button class="text-secondary2-color flex items-center gap-2">
+                    <span class="h5 font-medium border-b">Shop Now</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="currentColor"
+                      class="size-4 lg:size-5"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div
+                  class="w-full sm-ex:w-[calc(100%-44.196%)] order-1 sm-ex:order-2"
+                >
+                  <img
+                    class="w-full"
+                    src="./assets/icon/hero-icon.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Flash Sales Section -->
+
+      <section class="mt-32">
+        <div class="container">
+          <div class="ml-[60px]">
+            <span class="sub-title">Today’s</span>
+            <div class="flex items-center justify-between gap-[87px] pt-6">
+              <div class="">
+                <h2>Flash Sales</h2>
+              </div>
+
+              <div class="inline-flex items-center gap-4 flex-1">
+                <div>
+                  <h6>Days</h6>
+                  <span class="time">03</span>
+                </div>
+                <div class="inline-flex flex-col gap-2">
+                  <div class="w-1 h-1 bg-danger-color rounded-full"></div>
+                  <div class="w-1 h-1 bg-danger-color rounded-full"></div>
+                </div>
+                <div>
+                  <h6>Hours</h6>
+                  <span class="time">23</span>
+                </div>
+                <div class="inline-flex flex-col gap-2">
+                  <div class="w-1 h-1 bg-danger-color rounded-full"></div>
+                  <div class="w-1 h-1 bg-danger-color rounded-full"></div>
+                </div>
+                <div>
+                  <h6>Minutes</h6>
+                  <span class="time">19</span>
+                </div>
+                <div class="inline-flex flex-col gap-2">
+                  <div class="w-1 h-1 bg-danger-color rounded-full"></div>
+                  <div class="w-1 h-1 bg-danger-color rounded-full"></div>
+                </div>
+                <div>
+                  <h6>Seconds</h6>
+                  <span class="time">56</span>
+                </div>
+              </div>
+              <div class="flex gap-2">
+                <div
+                  class="w-11 h-11 bg-secondary-color rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="w-11 h-11 bg-secondary-color rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="bg-primary-color mt-20 pt-20 pb-6">
+        <div class="container">
+          <div class="flex flex-wrap gap-[87px] text-secondary2-color">
+            <div class="w-[217px]">
+              <span class="text-2xl leading-6 tracking-wide font-bold"
+                >Exclusive</span
+              >
+              <h4 class="mt-6">Subscribe</h4>
+              <h5>Get 10% off your first order</h5>
+              <div
+                class="pl-4 pr-10 py-3 bg-transparent border-[1.5px] rounded mt-4 relative"
+              >
+                <input
+                  class="bg-transparent w-full focus:outline-none placeholder:text-secondary2-color placeholder:opacity-40"
+                  type="email"
+                  placeholder="Enter your email"
+                />
+                <button class="absolute top-1/2 right-3 -translate-y-1/2">
+                  <img
+                    class="w-6"
+                    src="./assets/icon/icon-send.png"
+                    alt="send icon"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="w-[175px]">
+              <h4>Support</h4>
+              <h5 class="mb-4">
+                111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.
+              </h5>
+              <h5 class="mb-4">exclusive@gmail.com</h5>
+              <h5>+88015-88888-9999</h5>
+            </div>
+            <div class="w-[123px]">
+              <h4>Account</h4>
+              <h5 class="mb-4">My Account</h5>
+              <h5 class="mb-4">Login / Register</h5>
+              <h5 class="mb-4">Cart</h5>
+              <h5 class="mb-4">Wishlist</h5>
+              <h5>Shop</h5>
+            </div>
+            <div class="w-[109px]">
+              <h4>Quick Link</h4>
+              <h5 class="mb-4">Privacy Policy</h5>
+              <h5 class="mb-4">Terms Of Use</h5>
+              <h5 class="mb-4">FAQ</h5>
+              <h5>Contact</h5>
+            </div>
+            <div class="w-[198px]">
+              <h4>Download App</h4>
+              <h6 class="mb-4 opacity-70">Save $3 with App New User Only</h6>
+              <div class="flex gap-2">
+                <div>
+                  <img src="./assets/icon/qr-code.png" alt="qr code" />
+                </div>
+                <div class="flex flex-col">
+                  <div>
+                    <img src="./assets/icon/GooglePlay.png" alt="GooglePlay" />
+                  </div>
+                  <div>
+                    <img src="./assets/icon/AppStore.png" alt="Applestore" />
+                  </div>
+                </div>
+              </div>
+              <div class="flex gap-6 mt-6">
+                <img class="w-6" src="./assets/icon/Icon-Facebook.png" alt="" />
+                <img class="w-6" src="./assets/icon/Icon-Twitter.png" alt="" />
+                <img class="w-6" src="./assets/icon/Icon-Linkedin.png" alt="" />
+                <img class="w-6" src="./assets/icon/Icon-Linkedin.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center pt-4 border-t border-white/40 opacity-40 mt-14">
+          <span class="text-base text-white"
+            >&#169; Copyright Rimel 2024. All right reserved</span
+          >
+        </div>
+      </footer>
     </main>
     <script type="module" src="/main.js"></script>
   </body>

@@ -10,9 +10,13 @@ export default {
       colors: {
         "primary-color": "var(--primary-color)",
         "secondary-color": "var(--secondary-color)",
+        "secondary2-color": "var(--secondary2-color)",
         "danger-color": "var(--danger-color)",
         "warning-color": "var(--warning-color)",
         "teal-color": "var(--teal-color)",
+      },
+      screens: {
+        "sm-ex": "450px",
       },
     },
   },

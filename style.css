@@ -7,26 +7,57 @@
 :root {
   --primary-color: #000000;
   --secondary-color: #f5f5f5;
+  --secondary2-color: #fafafa;
   --danger-color: #db4444;
   --warning-color: #ffad33;
   --teal-color: #00ff66;
 }
 
-@layer components {
-  .container {
-    @apply max-w-[1218px] mx-auto px-6;
+@layer base {
+  body {
+    @apply font-body text-primary-color min-w-80;
   }
+
+  h1,
+  .h1 {
+    @apply text-4xl lg:text-5xl lg:leading-[60px] font-semibold font-inter text-secondary2-color tracking-wide;
+  }
+  h2,
+  .h2 {
+    @apply text-3xl lg:text-4xl lg:leading-[48px] font-semibold font-inter tracking-wider;
+  }
+  h3,
+  .h3 {
+    @apply text-lg lg:text-2xl lg:leading-6 font-inter font-semibold tracking-wide text-secondary2-color;
+  }
+  h4,
+  .h4 {
+    @apply text-base lg:text-xl font-medium font-body text-secondary2-color mb-6;
+  }
+  h5,
+  .h5 {
+    @apply text-sm lg:text-base;
+  }
+  h6,
+  .h6 {
+    @apply text-xs font-medium mb-1;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply px-6 max-w-[1218px] mx-auto;
+  }
+}
+
+@layer components {
   .nav-item {
     @apply text-base font-normal  py-1 relative before:w-full before:h-0.5 before:opacity-0 before:bg-gray-400 before:absolute before:left-0 before:right-0 before:bottom-0 hover:before:opacity-100 transition-all duration-700 skew-x-2;
   }
-}
-
-body {
-  min-width: 320px;
-}
-
-@layer base {
-  body {
-    @apply font-body text-primary-color;
+  .sub-title {
+    @apply relative text-base leading-5 font-semibold text-danger-color pl-8 before:absolute before:-top-2 before:-bottom-2 before:left-0 before:w-5 before:rounded before:bg-danger-color;
+  }
+  .time {
+    @apply text-[32px] leading-[30px] font-bold font-inter tracking-wide;
   }
 }
