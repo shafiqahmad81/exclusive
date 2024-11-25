@@ -61,6 +61,17 @@
     @apply text-[32px] leading-[30px] font-bold font-inter tracking-wide;
   }
   .btn {
-    @apply px-12 py-4 rounded text-secondary2-color;
+    @apply px-12 py-4 rounded text-secondary2-color hover:opacity-80 transition-all;
   }
 }
+
+/* Ellipse 24 */
+
+/* position: absolute; 
+width: 238px;
+height: 238px;
+left: calc(50% - 238px/2);
+top: calc(50% - 238px/2);
+
+background: rgba(217, 217, 217, 0.9);
+filter: blur(150px);*/

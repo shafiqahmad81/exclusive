@@ -323,83 +323,89 @@
 
       <section class="mt-32">
         <div class="container">
-          <div class="ml-[60px]">
+          <div class="lg:ml-[60px]">
             <span class="sub-title">Today’s</span>
-            <div class="flex items-center justify-between gap-[87px] pt-6">
-              <div class="">
+            <div
+              class="flex flex-col md:flex-row items-center justify-between pt-6"
+            >
+              <div class="w-full md:w-[298px] pr-12 lg:pr-[87px]">
                 <h2>Flash Sales</h2>
               </div>
 
-              <div class="inline-flex items-center gap-4 flex-1">
-                <div>
-                  <h6>Days</h6>
-                  <span class="time">03</span>
+              <div
+                class="w-full md:w-[calc(100%-298px)] sm:inline-flex mt-5 md:mt-0"
+              >
+                <div class="inline-flex items-center gap-4 flex-1">
+                  <div>
+                    <h6>Days</h6>
+                    <span class="time">03</span>
+                  </div>
+                  <div class="inline-flex flex-col gap-2">
+                    <div class="w-1 h-1 bg-danger-color rounded-full"></div>
+                    <div class="w-1 h-1 bg-danger-color rounded-full"></div>
+                  </div>
+                  <div>
+                    <h6>Hours</h6>
+                    <span class="time">23</span>
+                  </div>
+                  <div class="inline-flex flex-col gap-2">
+                    <div class="w-1 h-1 bg-danger-color rounded-full"></div>
+                    <div class="w-1 h-1 bg-danger-color rounded-full"></div>
+                  </div>
+                  <div>
+                    <h6>Minutes</h6>
+                    <span class="time">19</span>
+                  </div>
+                  <div class="inline-flex flex-col gap-2">
+                    <div class="w-1 h-1 bg-danger-color rounded-full"></div>
+                    <div class="w-1 h-1 bg-danger-color rounded-full"></div>
+                  </div>
+                  <div>
+                    <h6>Seconds</h6>
+                    <span class="time">56</span>
+                  </div>
                 </div>
-                <div class="inline-flex flex-col gap-2">
-                  <div class="w-1 h-1 bg-danger-color rounded-full"></div>
-                  <div class="w-1 h-1 bg-danger-color rounded-full"></div>
-                </div>
-                <div>
-                  <h6>Hours</h6>
-                  <span class="time">23</span>
-                </div>
-                <div class="inline-flex flex-col gap-2">
-                  <div class="w-1 h-1 bg-danger-color rounded-full"></div>
-                  <div class="w-1 h-1 bg-danger-color rounded-full"></div>
-                </div>
-                <div>
-                  <h6>Minutes</h6>
-                  <span class="time">19</span>
-                </div>
-                <div class="inline-flex flex-col gap-2">
-                  <div class="w-1 h-1 bg-danger-color rounded-full"></div>
-                  <div class="w-1 h-1 bg-danger-color rounded-full"></div>
-                </div>
-                <div>
-                  <h6>Seconds</h6>
-                  <span class="time">56</span>
-                </div>
-              </div>
-              <div class="flex gap-2">
-                <div
-                  class="w-11 h-11 bg-secondary-color rounded-full flex items-center justify-center"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-6"
+                <div class="flex gap-2 mt-5 sm:mt-0">
+                  <div
+                    class="w-11 h-11 bg-secondary-color rounded-full flex items-center justify-center"
                   >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
-                    />
-                  </svg>
-                </div>
-                <div
-                  class="w-11 h-11 bg-secondary-color rounded-full flex items-center justify-center"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="size-6"
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                      />
+                    </svg>
+                  </div>
+                  <div
+                    class="w-11 h-11 bg-secondary-color rounded-full flex items-center justify-center"
                   >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                    />
-                  </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                      />
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="flex gap-7 mt-10">
+            <div class="flex flex-wrap gap-7 mt-10">
               <div class="w-[270px]">
                 <div
                   class="bg-secondary-color p-3 relative group transition-all h-[250px] cursor-pointer"
@@ -663,12 +669,12 @@
         <div class="container">
           <div class="mt-14 pt-20 pb-[70px] border-y border-opacity-30">
             <span class="sub-title">Categories</span>
-            <div class="flex items-center justify-between gap-[87px] pt-6">
+            <div class="sm:flex items-center justify-between gap-[87px] pt-6">
               <div class="">
                 <h2>Browse By Category</h2>
               </div>
 
-              <div class="flex gap-2">
+              <div class="flex gap-2 mt-5 sm:mt-0">
                 <div
                   class="w-11 h-11 bg-secondary-color rounded-full flex items-center justify-center"
                 >
@@ -708,7 +714,7 @@
               </div>
             </div>
             <div class="mt-14">
-              <div class="flex gap-7">
+              <div class="flex flex-wrap gap-7">
                 <div
                   class="w-[170px] border border-opacity-30 p-6 flex flex-col items-center gap-4 group hover:bg-danger-color rounded transition-colors duration-300"
                 >
@@ -1039,17 +1045,19 @@
         <div class="container">
           <span class="sub-title">Categories</span>
           <div
-            class="flex items-center justify-between gap-[87px] pt-6 mb-[60px]"
+            class="md:flex items-center justify-between gap-[87px] pt-6 mb-[60px]"
           >
             <div class="">
               <h2>Browse By Category</h2>
             </div>
 
-            <button class="btn text-secondary2-color bg-danger-color">
+            <button
+              class="btn text-secondary2-color bg-danger-color mt-5 md:mt-0"
+            >
               View All
             </button>
           </div>
-          <div class="flex gap-7">
+          <div class="flex flex-wrap gap-7">
             <div class="w-[270px]">
               <div
                 class="bg-secondary-color p-3 relative transition-all h-[250px] cursor-pointer"
@@ -1342,6 +1350,451 @@
         </div>
       </section>
 
+      <!-- Music Experience -->
+
+      <section class="mt-[140px]">
+        <div class="container">
+          <div
+            class="bg-black px-3 md:px-6 lg:pl-14 lg:pr-11 py-10 flex flex-col md:flex-row items-center justify-between relative"
+          >
+            <div
+              class="w-full md:w-[calc(100%-56.074%)] md:pr-3 lg:pr-7 order-2 md:order-1"
+            >
+              <h5 class="text-teal-color">Categories</h5>
+              <h2
+                class="h1 text-secondary2-color font-inter font-semibold py-8"
+              >
+                Enhance Your Music Experience
+              </h2>
+              <div class="flex items-center gap-3 lg:gap-6 mb-10">
+                <div
+                  class="w-16 h-16 bg-white rounded-full flex flex-col items-center justify-center"
+                >
+                  <h5 class="font-semibold leading-5">23</h5>
+                  <h6 class="text-[11px] leading-[18px] font-normal">Hours</h6>
+                </div>
+                <div
+                  class="w-16 h-16 bg-white rounded-full flex flex-col items-center justify-center"
+                >
+                  <h5 class="font-semibold leading-5">05</h5>
+                  <h6 class="text-[11px] leading-[18px] font-normal">Days</h6>
+                </div>
+                <div
+                  class="w-16 h-16 bg-white rounded-full flex flex-col items-center justify-center"
+                >
+                  <h5 class="font-semibold leading-5">59</h5>
+                  <h6 class="text-[11px] leading-[18px] font-normal">
+                    Minutes
+                  </h6>
+                </div>
+                <div
+                  class="w-16 h-16 bg-white rounded-full flex flex-col items-center justify-center"
+                >
+                  <h5 class="font-semibold leading-5">35</h5>
+                  <h6 class="text-[11px] leading-[18px] font-normal">
+                    Seconds
+                  </h6>
+                </div>
+              </div>
+              <button class="btn bg-teal-color">Buy N ow!</button>
+            </div>
+            <div class="relative w-full md:w-[56.074%] order-1 md:order-2">
+              <img
+                class="w-full z-20 relative"
+                src="./assets/icon/speaker.png"
+                alt="speaker icon"
+              />
+              <div
+                class="absolute left-0 top-0 w-full h-full bg-[#D9D9D9] opacity-30 blur-[100px] z-10"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Our Products -->
+
+      <section class="mt-16">
+        <div class="container">
+          <span class="sub-title">Our Products</span>
+          <div class="sm:flex items-center justify-between gap-[87px] pt-6">
+            <div class="">
+              <h2>Explore Our Products</h2>
+            </div>
+
+            <div class="flex gap-2 mt-5 sm:mt-0">
+              <div
+                class="w-11 h-11 bg-secondary-color rounded-full flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                  />
+                </svg>
+              </div>
+              <div
+                class="w-11 h-11 bg-secondary-color rounded-full flex items-center justify-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-7 mt-10">
+            <div class="w-[270px]">
+              <div
+                class="bg-secondary-color p-3 relative group transition-all h-[250px] cursor-pointer"
+              >
+                <button
+                  class="absolute top-3 left-3 bg-danger-color rounded h6 text-secondary2-color px-3 py-1"
+                >
+                  -40%
+                </button>
+                <div class="absolute top-3 right-3">
+                  <div
+                    class="flex items-center justify-center w-[34px] h-[34px] bg-white rounded-full mb-2"
+                  >
+                    <img
+                      class="w-6"
+                      src="./assets/icon/heart.png"
+                      alt="heart icon"
+                    />
+                  </div>
+                  <div
+                    class="flex items-center justify-center w-[34px] h-[34px] bg-white rounded-full"
+                  >
+                    <img
+                      class="w-6"
+                      src="./assets/icon/view.png"
+                      alt="heart icon"
+                    />
+                  </div>
+                </div>
+                <div class="px-7 py-6 group-hover:py-0 duration-700">
+                  <img
+                    class="w-[190px]"
+                    src="./assets/icon/gamepad.png"
+                    alt="gamepad icon"
+                  />
+                </div>
+                <button
+                  class="w-full bg-black text-white py-2 h5 hidden group-hover:block duration-700"
+                >
+                  Add To Cart
+                </button>
+              </div>
+              <div class="mt-4">
+                <h5>HAVIT HV-G92 Gamepad</h5>
+                <div class="flex gap-3 py-2">
+                  <h5 class="text-danger-color">$120</h5>
+                  <h5 class="opacity-50 line-through">$160</h5>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <div class="flex gap-1 items-center">
+                    <img
+                      class="w-5"
+                      src="./assets/icon/star.png"
+                      alt="star icon"
+                    />
+                    <img
+                      class="w-5"
+                      src="./assets/icon/star.png"
+                      alt="star icon"
+                    />
+                    <img
+                      class="w-5"
+                      src="./assets/icon/star.png"
+                      alt="star icon"
+                    />
+                    <img
+                      class="w-5"
+                      src="./assets/icon/star.png"
+                      alt="star icon"
+                    />
+                    <img
+                      class="w-5"
+                      src="./assets/icon/star.png"
+                      alt="star icon"
+                    />
+                  </div>
+                  <span class="text-xs leading-5 opacity-50 font-semibold mt-1"
+                    >(88)</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="w-[270px]">
+              <div
+                class="bg-secondary-color p-3 relative group transition-all h-[250px] cursor-pointer"
+              >
+                <button
+                  class="absolute top-3 left-3 bg-danger-color rounded h6 text-secondary2-color px-3 py-1"
+                >
+                  -40%
+                </button>
+                <div class="absolute top-3 right-3">
+                  <div
+                    class="flex items-center justify-center w-[34px] h-[34px] bg-white rounded-full mb-2"
+                  >
+                    <img
+                      class="w-6"
+                      src="./assets/icon/heart.png"
+                      alt="heart icon"
+                    />
+                  </div>
+                  <div
+                    class="flex items-center justify-center w-[34px] h-[34px] bg-white rounded-full"
+                  >
+                    <img
+                      class="w-6"
+                      src="./assets/icon/view.png"
+                      alt="heart icon"
+                    />
+                  </div>
+                </div>
+                <div class="px-7 py-6 group-hover:py-0 duration-700">
+                  <img
+                    class="w-[190px]"
+                    src="./assets/icon/gamepad.png"
+                    alt="gamepad icon"
+                  />
+                </div>
+                <button
+                  class="w-full bg-black text-white py-2 h5 hidden group-hover:block duration-700"
+                >
+                  Add To Cart
+                </button>
+              </div>
+              <div class="mt-4">
+                <h5>HAVIT HV-G92 Gamepad</h5>
+                <div class="flex gap-3 py-2">
+                  <h5 class="text-danger-color">$120</h5>
+                  <h5 class="opacity-50 line-through">$160</h5>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <div class="flex gap-1 items-center">
+                    <img
+                      class="w-5"
+                      src="./assets/icon/star.png"
+                      alt="star icon"
+                    />
+                    <img
+                      class="w-5"
+                      src="./assets/icon/star.png"
+                      alt="star icon"
+                    />
+                    <img
+                      class="w-5"
+                      src="./assets/icon/star.png"
+                      alt="star icon"
+                    />
+                    <img
+                      class="w-5"
+                      src="./assets/icon/star.png"
+                      alt="star icon"
+                    />
+                    <img
+                      class="w-5"
+                      src="./assets/icon/star.png"
+                      alt="star icon"
+                    />
+                  </div>
+                  <span class="text-xs leading-5 opacity-50 font-semibold mt-1"
+                    >(88)</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="w-[270px]">
+              <div
+                class="bg-secondary-color p-3 relative group transition-all h-[250px] cursor-pointer"
+              >
+                <button
+                  class="absolute top-3 left-3 bg-danger-color rounded h6 text-secondary2-color px-3 py-1"
+                >
+                  -40%
+                </button>
+                <div class="absolute top-3 right-3">
+                  <div
+                    class="flex items-center justify-center w-[34px] h-[34px] bg-white rounded-full mb-2"
+                  >
+                    <img
+                      class="w-6"
+                      src="./assets/icon/heart.png"
+                      alt="heart icon"
+                    />
+                  </div>
+                  <div
+                    class="flex items-center justify-center w-[34px] h-[34px] bg-white rounded-full"
+                  >
+                    <img
+                      class="w-6"
+                      src="./assets/icon/view.png"
+                      alt="heart icon"
+                    />
+                  </div>
+                </div>
+                <div class="px-7 py-6 group-hover:py-0 duration-700">
+                  <img
+                    class="w-[190px]"
+                    src="./assets/icon/gamepad.png"
+                    alt="gamepad icon"
+                  />
+                </div>
+                <button
+                  class="w-full bg-black text-white py-2 h5 hidden group-hover:block duration-700"
+                >
+                  Add To Cart
+                </button>
+              </div>
+              <div class="mt-4">
+                <h5>HAVIT HV-G92 Gamepad</h5>
+                <div class="flex gap-3 py-2">
+                  <h5 class="text-danger-color">$120</h5>
+                  <h5 class="opacity-50 line-through">$160</h5>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <div class="flex gap-1 items-center">
+                    <img
+                      class="w-5"
+                      src="./assets/icon/star.png"
+                      alt="star icon"
+                    />
+                    <img
+                      class="w-5"
+                      src="./assets/icon/star.png"
+                      alt="star icon"
+                    />
+                    <img
+                      class="w-5"
+                      src="./assets/icon/star.png"
+                      alt="star icon"
+                    />
+                    <img
+                      class="w-5"
+                      src="./assets/icon/star.png"
+                      alt="star icon"
+                    />
+                    <img
+                      class="w-5"
+                      src="./assets/icon/star.png"
+                      alt="star icon"
+                    />
+                  </div>
+                  <span class="text-xs leading-5 opacity-50 font-semibold mt-1"
+                    >(88)</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="w-[270px]">
+              <div
+                class="bg-secondary-color p-3 relative group transition-all h-[250px] cursor-pointer"
+              >
+                <button
+                  class="absolute top-3 left-3 bg-danger-color rounded h6 text-secondary2-color px-3 py-1"
+                >
+                  -40%
+                </button>
+                <div class="absolute top-3 right-3">
+                  <div
+                    class="flex items-center justify-center w-[34px] h-[34px] bg-white rounded-full mb-2"
+                  >
+                    <img
+                      class="w-6"
+                      src="./assets/icon/heart.png"
+                      alt="heart icon"
+                    />
+                  </div>
+                  <div
+                    class="flex items-center justify-center w-[34px] h-[34px] bg-white rounded-full"
+                  >
+                    <img
+                      class="w-6"
+                      src="./assets/icon/view.png"
+                      alt="heart icon"
+                    />
+                  </div>
+                </div>
+                <div class="px-7 py-6 group-hover:py-0 duration-700">
+                  <img
+                    class="w-[190px]"
+                    src="./assets/icon/gamepad.png"
+                    alt="gamepad icon"
+                  />
+                </div>
+                <button
+                  class="w-full bg-black text-white py-2 h5 hidden group-hover:block duration-700"
+                >
+                  Add To Cart
+                </button>
+              </div>
+              <div class="mt-4">
+                <h5>HAVIT HV-G92 Gamepad</h5>
+                <div class="flex gap-3 py-2">
+                  <h5 class="text-danger-color">$120</h5>
+                  <h5 class="opacity-50 line-through">$160</h5>
+                </div>
+                <div class="flex gap-2 items-center">
+                  <div class="flex gap-1 items-center">
+                    <img
+                      class="w-5"
+                      src="./assets/icon/star.png"
+                      alt="star icon"
+                    />
+                    <img
+                      class="w-5"
+                      src="./assets/icon/star.png"
+                      alt="star icon"
+                    />
+                    <img
+                      class="w-5"
+                      src="./assets/icon/star.png"
+                      alt="star icon"
+                    />
+                    <img
+                      class="w-5"
+                      src="./assets/icon/star.png"
+                      alt="star icon"
+                    />
+                    <img
+                      class="w-5"
+                      src="./assets/icon/star.png"
+                      alt="star icon"
+                    />
+                  </div>
+                  <span class="text-xs leading-5 opacity-50 font-semibold mt-1"
+                    >(88)</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Footer Section -->
       <footer class="bg-primary-color mt-20 pt-20 pb-6">
         <div class="container">
@@ -1411,7 +1864,11 @@
               <div class="flex gap-6 mt-6">
                 <img class="w-6" src="./assets/icon/Icon-Facebook.png" alt="" />
                 <img class="w-6" src="./assets/icon/Icon-Twitter.png" alt="" />
-                <img class="w-6" src="./assets/icon/Icon-Linkedin.png" alt="" />
+                <img
+                  class="w-6"
+                  src="./assets/icon/icon-instagram.png"
+                  alt=""
+                />
                 <img class="w-6" src="./assets/icon/Icon-Linkedin.png" alt="" />
               </div>
             </div>
