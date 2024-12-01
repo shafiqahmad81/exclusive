@@ -10,7 +10,9 @@
   --secondary2-color: #fafafa;
   --danger-color: #db4444;
   --warning-color: #ffad33;
+  --teal-color-light: #eeff61;
   --teal-color: #00ff66;
+  --prestige-green: #184a48;
 }
 
 @layer base {
@@ -41,6 +43,9 @@
   h6,
   .h6 {
     @apply text-xs font-medium mb-1;
+  }
+  .swiper {
+    @apply w-[600px] h-[300px];
   }
 }
 
