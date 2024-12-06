@@ -44,9 +44,6 @@
   .h6 {
     @apply text-xs font-medium mb-1;
   }
-  .swiper {
-    @apply w-[600px] h-[300px];
-  }
 }
 
 @layer utilities {
