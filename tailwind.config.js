@@ -19,7 +19,7 @@ export default {
         "tricorn-black": "#2F2E30",
       },
       screens: {
-        "sm-ex": "450px",
+        "sm-ex": "440px",
       },
     },
   },

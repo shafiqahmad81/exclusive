@@ -67,6 +67,30 @@
   }
 }
 
+/* Slider */
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  @apply content-[''];
+}
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  @apply w-[60%];
+}
+
+.swiper-button-prev {
+  @apply -top-16 right-[3.25rem] left-auto z-50;
+}
+.swiper-button-next {
+  @apply -top-16 right-0 z-50;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @apply text-black;
+}
+
 /* Ellipse 24 */
 
 /* position: absolute; 
