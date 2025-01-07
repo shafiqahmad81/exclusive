@@ -69,6 +69,14 @@
 
 /* Slider */
 
+.swiper-pagination-bullet {
+  @apply bg-white/50 size-3 opacity-100;
+}
+
+.swiper-pagination-bullet-active {
+  @apply !bg-danger-color size-[14px] border-2 border-white;
+}
+
 .swiper-button-next:after,
 .swiper-button-prev:after {
   @apply content-[''];

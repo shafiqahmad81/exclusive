@@ -17,20 +17,31 @@ closeMenu.addEventListener("click", () => {
 
 // slider section
 
-var hero = new Swiper(".mySwiper", {
+const hero = new Swiper(".myHero", {
   slidesPerView: 1,
   spaceBetween: 20,
-  freeMode: true,
   loop: true,
   autoplay: {
     delay: 2500,
   },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+const flash = new Swiper(".flashSales", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  freeMode: true,
+  loop: true,
+
   navigation: {
     nextEl: ".swiper1-button-next",
     prevEl: ".swiper1-button-prev",
   },
   pagination: {
-    el: ".swiper-pagination",
+    enabled: false,
     clickable: true,
   },
 
@@ -47,20 +58,18 @@ var hero = new Swiper(".mySwiper", {
     },
   },
 });
-var catagory = new Swiper(".mySwiper2", {
+const catagory = new Swiper(".mySwiper2", {
   slidesPerView: 1,
   spaceBetween: 30,
   freeMode: true,
   loop: true,
-  autoplay: {
-    delay: 2500,
-  },
+
   navigation: {
     nextEl: ".swiper2-button-next",
     prevEl: ".swiper2-button-prev",
   },
   pagination: {
-    el: ".swiper-pagination",
+    enabled: false,
     clickable: true,
   },
   breakpoints: {
