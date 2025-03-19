@@ -21,6 +21,7 @@ const hero = new Swiper(".myHero", {
   slidesPerView: 1,
   spaceBetween: 20,
   loop: true,
+  autoHeight: true,
   autoplay: {
     delay: 2500,
   },
