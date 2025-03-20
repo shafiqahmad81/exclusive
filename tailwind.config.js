@@ -9,6 +9,7 @@ export default {
       },
       colors: {
         "primary-color": "var(--primary-color)",
+        "primary2-color": "var(--primary2-color)",
         "secondary-color": "var(--secondary-color)",
         "secondary2-color": "var(--secondary2-color)",
         "danger-color": "var(--danger-color)",
