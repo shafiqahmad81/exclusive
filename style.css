@@ -1,20 +1,61 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+layer(base);
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@import "tailwindcss";
+@import 'tailwindcss';
 
-:root {
-  --primary-color: #000000;
-  --primary2-color: #808080;
-  --secondary-color: #f5f5f5;
-  --secondary2-color: #fafafa;
-  --danger-color: #db4444;
-  --warning-color: #ffad33;
-  --teal-color-light: #eeff61;
-  --teal-color: #00ff66;
-  --prestige-green: #184a48;
+@theme {
+  --font-inter: 'Inter', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+
+  --color-primary-color: var(--primary-color);
+  --color-secondary-color: var(--secondary-color);
+  --color-secondary2-color: var(--secondary2-color);
+  --color-danger-color: var(--danger-color);
+  --color-warning-color: var(--warning-color);
+  --color-teal-color-light: var(--teal-color-light);
+  --color-teal-color: var(--teal-color);
+  --color-prestige-green: var(--prestige-green);
+  --color-tricorn-black: #2f2e30;
+  --color-gray-secondary: #808080;
+
+  --breakpoint-sm-ex: 440px;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@utility container {
+  @apply px-6 max-w-[1218px] mx-auto;
+}
+
+
+
+@layer utilities {
+  :root {
+    --primary-color: #000000;
+    --secondary-color: #f5f5f5;
+    --secondary2-color: #fafafa;
+    --danger-color: #db4444;
+    --warning-color: #ffad33;
+    --teal-color-light: #eeff61;
+    --teal-color: #00ff66;
+    --prestige-green: #184a48;
+  }
 }
 
 @layer base {
@@ -48,24 +89,19 @@
   }
 }
 
-@layer utilities {
-  .container {
-    @apply px-6 max-w-[1218px] mx-auto;
-  }
-}
-
-@layer components {
+@layer components{
   .nav-item {
-    @apply text-base font-normal px-4 py-2 cursor-pointer decoration-2 underline-offset-4 decoration-primary-color hover:underline transition-all duration-700 ;
+    @apply text-base font-normal px-4 py-2 cursor-pointer decoration-2 decoration-primary-color/30 underline-offset-4 hover:underline transition-all duration-700;
   }
   .sub-title {
-    @apply relative text-base leading-5 font-semibold text-danger-color pl-8 before:absolute before:-top-2 before:-bottom-2 before:left-0 before:w-5 before:rounded before:bg-danger-color;
+    @apply relative text-base leading-5 font-semibold text-danger-color pl-8 before:absolute before:-top-2 before:-bottom-2 before:left-0 before:w-5 before:rounded-sm before:bg-danger-color;
   }
   .time {
     @apply text-[32px] leading-[30px] font-bold font-inter tracking-wide;
   }
-  .btn {
-    @apply px-12 py-4 rounded text-secondary2-color hover:opacity-80 transition-all;
+
+  .btn{
+    @apply px-12 py-4 rounded-sm text-secondary2-color hover:opacity-80 transition-all;
   }
 }
 
@@ -76,7 +112,7 @@
 }
 
 .swiper-pagination-bullet-active {
-  @apply !bg-danger-color size-[14px] border-2 border-white;
+  @apply bg-danger-color! size-[14px] border-2 border-white;
 }
 
 .swiper-button-next:after,

@@ -24,7 +24,7 @@
           </p>
           <div class="relative inline-block">
             <select name="currency"
-              class="rounded-md border-0 py-1 px-4 bg-black text-white sm:text-sm cursor-pointer appearance-none pr-8 outline-none transition">
+              class="rounded-md border-0 py-1 px-4 bg-black text-white sm:text-sm cursor-pointer appearance-none pr-8 outline-hidden transition">
               <option>English</option>
               <option>English2</option>
               <option>English3</option>
@@ -39,7 +39,7 @@
 
     <!-- Header section -->
 
-    <header class="mt-10 pb-3 border-b">
+    <header class="mt-10 pb-3 border-b border-primary-color/10">
       <div class="container">
         <nav class="flex items-center justify-between" aria-label="Global">
           <div class="flex">
@@ -79,8 +79,8 @@
             </button>
           </div>
           <div class="hidden lg:flex lg:justify-end items-center">
-            <div class="flex items-center relative rounded mr-6">
-              <input class="w-[243px] pl-5 pr-10 py-4 font-normal text-xs bg-secondary-color focus:outline-none"
+            <div class="flex items-center relative rounded-sm mr-6">
+              <input class="w-[243px] pl-5 pr-10 py-4 font-normal text-xs bg-secondary-color focus:outline-hidden"
                 type="text" placeholder="What are you looking for?" />
               <button class="absolute top-1/2 right-3 -translate-y-1/2">
                 <img class="w-6" src="./assets/icon/search.png" alt="search icon" />
@@ -109,8 +109,8 @@
               class="block rounded-lg py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
           </div>
           <div class="flex justify-end items-center">
-            <div class="w-[243px] flex-1 relative rounded mr-5">
-              <input class="w-full pl-5 pr-10 py-4 font-normal text-xs bg-secondary-color focus:outline-none"
+            <div class="w-[243px] flex-1 relative rounded-sm mr-5">
+              <input class="w-full pl-5 pr-10 py-4 font-normal text-xs bg-secondary-color focus:outline-hidden"
                 type="text" placeholder="What are you looking for?" />
               <button class="absolute top-1/2 right-3 -translate-y-1/2">
                 <img class="w-6 h-6" src="./assets/icon/search.png" alt="search icon" />
@@ -131,7 +131,7 @@
     <section>
       <div class="container mt-1">
         <div class="flex">
-          <aside class="w-[233px] pt-11 pr-4 border-r hidden md:block">
+          <aside class="w-[233px] pt-11 pr-4 border-r border-primary-color/10 hidden md:block">
             <ul>
               <li class="mb-4">
                 <a class="flex items-center justify-between" href="#">
@@ -310,7 +310,7 @@
         <div class="">
           <span class="sub-title">Today’s</span>
           <div class="flex flex-col md:flex-row items-center justify-between pt-6">
-            <div class="w-full md:w-[298px] flex-grow pr-5 lg:pr-7">
+            <div class="w-full md:w-[298px] grow pr-5 lg:pr-7">
               <h2>Flash Sales</h2>
             </div>
 
@@ -367,13 +367,13 @@
           </div>
           <div class="mt-10 relative w-screen overflow-hidden">
             <div class="w-full max-w-[1170px] pr-16 sm-ex:pr-0">
-              <div class="swiper flashSales !overflow-visible">
+              <div class="swiper flashSales overflow-visible!">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="w-full">
                       <div class="bg-secondary-color p-3 relative group transition-all h-[250px] cursor-pointer">
                         <button
-                          class="absolute top-3 left-3 bg-danger-color rounded h6 text-secondary2-color px-3 py-1">
+                          class="absolute top-3 left-3 bg-danger-color rounded-sm h6 text-secondary2-color px-3 py-1">
                           -40%
                         </button>
                         <div class="absolute top-3 right-3">
@@ -414,7 +414,7 @@
                     <div class="w-full">
                       <div class="bg-secondary-color p-3 relative group transition-all h-[250px] cursor-pointer">
                         <button
-                          class="absolute top-3 left-3 bg-danger-color rounded h6 text-secondary2-color px-3 py-1">
+                          class="absolute top-3 left-3 bg-danger-color rounded-sm h6 text-secondary2-color px-3 py-1">
                           -40%
                         </button>
                         <div class="absolute top-3 right-3">
@@ -456,7 +456,7 @@
                       <div class="group">
                         <div class="bg-secondary-color p-3 relative transition-all h-[250px] cursor-pointer">
                           <button
-                            class="absolute top-3 left-3 bg-danger-color rounded h6 text-secondary2-color px-3 py-1">
+                            class="absolute top-3 left-3 bg-danger-color rounded-sm h6 text-secondary2-color px-3 py-1">
                             -40%
                           </button>
                           <div class="absolute top-3 right-3">
@@ -498,7 +498,7 @@
                     <div class="w-full">
                       <div class="bg-secondary-color p-3 relative group transition-all h-[250px] cursor-pointer">
                         <button
-                          class="absolute top-3 left-3 bg-danger-color rounded h6 text-secondary2-color px-3 py-1">
+                          class="absolute top-3 left-3 bg-danger-color rounded-sm h6 text-secondary2-color px-3 py-1">
                           -40%
                         </button>
                         <div class="absolute top-3 right-3">
@@ -539,7 +539,7 @@
                     <div class="w-full">
                       <div class="bg-secondary-color p-3 relative group transition-all h-[250px] cursor-pointer">
                         <button
-                          class="absolute top-3 left-3 bg-danger-color rounded h6 text-secondary2-color px-3 py-1">
+                          class="absolute top-3 left-3 bg-danger-color rounded-sm h6 text-secondary2-color px-3 py-1">
                           -40%
                         </button>
                         <div class="absolute top-3 right-3">
@@ -580,7 +580,7 @@
                     <div class="w-full">
                       <div class="bg-secondary-color p-3 relative group transition-all h-[250px] cursor-pointer">
                         <button
-                          class="absolute top-3 left-3 bg-danger-color rounded h6 text-secondary2-color px-3 py-1">
+                          class="absolute top-3 left-3 bg-danger-color rounded-sm h6 text-secondary2-color px-3 py-1">
                           -40%
                         </button>
                         <div class="absolute top-3 right-3">
@@ -621,7 +621,7 @@
                     <div class="w-full">
                       <div class="bg-secondary-color p-3 relative group transition-all h-[250px] cursor-pointer">
                         <button
-                          class="absolute top-3 left-3 bg-danger-color rounded h6 text-secondary2-color px-3 py-1">
+                          class="absolute top-3 left-3 bg-danger-color rounded-sm h6 text-secondary2-color px-3 py-1">
                           -40%
                         </button>
                         <div class="absolute top-3 right-3">
@@ -662,7 +662,7 @@
                     <div class="w-full">
                       <div class="bg-secondary-color p-3 relative group transition-all h-[250px] cursor-pointer">
                         <button
-                          class="absolute top-3 left-3 bg-danger-color rounded h6 text-secondary2-color px-3 py-1">
+                          class="absolute top-3 left-3 bg-danger-color rounded-sm h6 text-secondary2-color px-3 py-1">
                           -40%
                         </button>
                         <div class="absolute top-3 right-3">
@@ -714,7 +714,7 @@
 
     <section class="">
       <div class="container">
-        <div class="mt-14 pt-20 pb-[70px] border-y border-opacity-30">
+        <div class="mt-14 pt-20 pb-[70px] border-y border-primary-color/10">
           <span class="sub-title">Categories</span>
           <div class="sm:flex items-center justify-between gap-[87px] pt-6 relative">
             <div class="">
@@ -745,7 +745,7 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div
-                    class="border border-opacity-30 p-6 flex flex-col items-center gap-4 group hover:bg-danger-color rounded transition-colors duration-300">
+                    class="border border-opacity-30 p-6 flex flex-col items-center gap-4 group hover:bg-danger-color rounded-sm transition-colors duration-300">
                     <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_1409_868)">
                         <path
@@ -770,7 +770,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div
-                    class="border border-opacity-30 p-6 flex flex-col items-center gap-4 group hover:bg-danger-color rounded transition-colors duration-300">
+                    class="border border-opacity-30 p-6 flex flex-col items-center gap-4 group hover:bg-danger-color rounded-sm transition-colors duration-300">
                     <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_1409_613)">
                         <path
@@ -799,7 +799,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div
-                    class="border border-opacity-30 p-6 flex flex-col items-center gap-4 group hover:bg-danger-color rounded transition-colors duration-300">
+                    class="border border-opacity-30 p-6 flex flex-col items-center gap-4 group hover:bg-danger-color rounded-sm transition-colors duration-300">
                     <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_1409_629)">
                         <path
@@ -830,7 +830,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div
-                    class="border border-opacity-30 p-6 flex flex-col items-center gap-4 group hover:bg-danger-color rounded transition-colors duration-300">
+                    class="border border-opacity-30 p-6 flex flex-col items-center gap-4 group hover:bg-danger-color rounded-sm transition-colors duration-300">
                     <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_1409_6)">
                         <path
@@ -853,7 +853,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div
-                    class="border border-opacity-30 p-6 flex flex-col items-center gap-4 group hover:bg-danger-color rounded transition-colors duration-300">
+                    class="border border-opacity-30 p-6 flex flex-col items-center gap-4 group hover:bg-danger-color rounded-sm transition-colors duration-300">
                     <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_1409_644)">
                         <path
@@ -882,7 +882,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div
-                    class="border border-opacity-30 p-6 flex flex-col items-center gap-4 group hover:bg-danger-color rounded transition-colors duration-300">
+                    class="border border-opacity-30 p-6 flex flex-col items-center gap-4 group hover:bg-danger-color rounded-sm transition-colors duration-300">
                     <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_1409_809)">
                         <path
@@ -907,7 +907,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div
-                    class="border border-opacity-30 p-6 flex flex-col items-center gap-4 group hover:bg-danger-color rounded transition-colors duration-300">
+                    class="border border-opacity-30 p-6 flex flex-col items-center gap-4 group hover:bg-danger-color rounded-sm transition-colors duration-300">
                     <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_1409_809)">
                         <path
@@ -932,7 +932,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div
-                    class="border border-opacity-30 p-6 flex flex-col items-center gap-4 group hover:bg-danger-color rounded transition-colors duration-300">
+                    class="border border-opacity-30 p-6 flex flex-col items-center gap-4 group hover:bg-danger-color rounded-sm transition-colors duration-300">
                     <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_1409_809)">
                         <path
@@ -957,7 +957,7 @@
                 </div>
                 <div class="swiper-slide">
                   <div
-                    class="border border-opacity-30 p-6 flex flex-col items-center gap-4 group hover:bg-danger-color rounded transition-colors duration-300">
+                    class="border border-opacity-30 p-6 flex flex-col items-center gap-4 group hover:bg-danger-color rounded-sm transition-colors duration-300">
                     <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_1409_809)">
                         <path
@@ -1331,7 +1331,7 @@
           </div>
           <div class="w-[270px]">
             <div class="bg-secondary-color p-3 relative group transition-all h-[250px] cursor-pointer">
-              <button class="absolute top-3 left-3 bg-teal-color rounded h6 text-secondary2-color px-3 py-1">
+              <button class="absolute top-3 left-3 bg-teal-color rounded-sm h6 text-secondary2-color px-3 py-1">
                 new
               </button>
               <div class="absolute top-3 right-3">
@@ -1416,7 +1416,7 @@
           </div>
           <div class="w-[270px]">
             <div class="bg-secondary-color p-3 relative group transition-all h-[250px] cursor-pointer">
-              <button class="absolute top-3 left-3 bg-teal-color rounded h6 text-secondary2-color px-3 py-1">
+              <button class="absolute top-3 left-3 bg-teal-color rounded-sm h6 text-secondary2-color px-3 py-1">
                 new
               </button>
               <div class="absolute top-3 right-3">
@@ -1515,7 +1515,7 @@
           <h2>Explore Our Products</h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mt-14">
-          <div class="pt-[89px] px-7 bg-primary-color rounded relative flex">
+          <div class="pt-[89px] px-7 bg-primary-color rounded-sm relative flex">
             <img src="./assets/icon/play-station.png" alt="Play" />
             <div class="absolute left-7 bottom-8 max-w-[242px]">
               <h3>PlayStation 5</h3>
@@ -1528,7 +1528,7 @@
             </div>
           </div>
           <div class="grid grid-cols-1 grid-rows-2 gap-4 md:gap-8">
-            <div class="flex justify-end bg-primary-color relative rounded overflow-hidden">
+            <div class="flex justify-end bg-primary-color relative rounded-sm overflow-hidden">
               <img class="w-[432px] float-right" src="./assets/icon/women-collections.png" alt="" />
               <div class="absolute left-4 md:left-7 bottom-4 sm:bottom-8 w-[255px]">
                 <h3>Women’s Collections</h3>
@@ -1541,7 +1541,7 @@
               </div>
             </div>
             <div class="w-full grid grid-cols-2 gap-4 md:gap-8">
-              <div class="bg-primary-color relative p-8 rounded">
+              <div class="bg-primary-color relative p-8 rounded-sm">
                 <div class="w-full">
                   <img class="w-full" src="./assets/icon/speakers.png" alt="speaker icon" />
                 </div>
@@ -1555,7 +1555,7 @@
                   </button>
                 </div>
               </div>
-              <div class="bg-primary-color relative p-8 rounded">
+              <div class="bg-primary-color relative p-8 rounded-sm">
                 <div class="w-full">
                   <img class="w-full" src="./assets/icon/perfume.png" alt="perfume icon" />
                 </div>
@@ -1626,9 +1626,9 @@
             <span class="text-2xl leading-6 tracking-wide font-bold">Exclusive</span>
             <h4 class="mt-6">Subscribe</h4>
             <h5>Get 10% off your first order</h5>
-            <div class="pl-4 pr-10 py-3 bg-transparent border-[1.5px] rounded mt-4 relative">
+            <div class="pl-4 pr-10 py-3 bg-transparent border-[1.5px] rounded-sm mt-4 relative">
               <input
-                class="bg-transparent w-full focus:outline-none placeholder:text-secondary2-color placeholder:opacity-40"
+                class="bg-transparent w-full focus:outline-hidden placeholder:text-secondary2-color placeholder:opacity-40"
                 type="email" placeholder="Enter your email" />
               <button class="absolute top-1/2 right-3 -translate-y-1/2">
                 <img class="w-6" src="./assets/icon/icon-send.png" alt="send icon" />
