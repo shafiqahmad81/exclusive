@@ -108,3 +108,5 @@ const catagory = new Swiper(".mySwiper2", {
 //     el: ".swiper-scrollbar",
 //   },
 // });
+
+

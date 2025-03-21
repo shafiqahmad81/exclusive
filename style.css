@@ -101,10 +101,13 @@ layer(base);
   }
 
   .btn{
-    @apply px-12 py-4 rounded-sm text-secondary2-color hover:opacity-80 transition-all;
+    @apply px-12 py-4 rounded-sm text-secondary2-color hover:opacity-70 transition-all duration-500 ;
   }
 }
 
+button{
+  @apply cursor-pointer
+}
 /* Slider */
 
 .swiper-pagination-bullet {
