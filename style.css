@@ -139,3 +139,11 @@ button{
 .swiper-button-prev {
   @apply text-black;
 }
+
+#checkbox-1:checked {
+  @apply bg-black
+}
+
+#checkbox-1:checked ~ .check1{
+  @apply opacity-100
+}

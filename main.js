@@ -87,26 +87,16 @@ const catagory = new Swiper(".mySwiper2", {
   },
 });
 
-// const swiper = new Swiper(".swiper", {
-//   // Optional parameters
-//   direction: "vertical",
-//   loop: true,
+// sidebar
 
-//   // If we need pagination
-//   pagination: {
-//     el: ".swiper-pagination",
-//   },
+document.querySelectorAll('.sidebarbtn').forEach(sidebarbtn => {
+  sidebarbtn.addEventListener('click', () => {
+    const content = sidebarbtn.nextElementSibling;
+    const arrow = sidebarbtn.querySelector('svg');
 
-//   // Navigation arrows
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-
-//   // And if we need scrollbar
-//   scrollbar: {
-//     el: ".swiper-scrollbar",
-//   },
-// });
+    content.classList.toggle('hidden');
+    arrow.classList.toggle('rotate-90');
+  });
+});
 
 
