@@ -33,6 +33,7 @@ const hero = new Swiper(".myHero", {
 
 const flash = new Swiper(".flashSales", {
   slidesPerView: 1,
+  slidesPerView: 'auto',
   spaceBetween: 20,
   freeMode: true,
   loop: true,
